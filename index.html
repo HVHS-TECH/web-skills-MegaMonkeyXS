@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang=en> 
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>The Legend Of Squeen Ness</title>
   <link href="styles.css" rel="stylesheet">
+
+  <style>
+    .outline-text-shadow {
+      color: black;
+      text-shadow:
+        2px 2px 0 #ffffff,
+       -2px 2px 0 #ffffff,
+        2px -2px 0 #ffffff,
+       -2px -2px 0 #ffffff;
+    }
+  </style>
 </head>
-<style>
 
-.outline-text-shadow {
-  color: black
- 
-    2px 2px 0 #ffffff,  
-    2px 2px 0 #ffffff,
-    2px 2px 0 #ffffff,
-    2px 2px 0 #ffffff;
-}
-</style>
 <body style="background-color:rgb(109, 204, 216);">
-  
-    <h1>The Legend of Squeen Ness</h1>
-    <h2>How he came of his Stand</h2>
-    <p>Squeen Ness gained his power after his ancestor Grug Ness activated his stand ability when Squeen Ness was 18. Every Squeenstar from then has gained the ability to manifest a stand.</p>
-    <h2>His Stand</h2>
-    <p>Squeen Ness Squeenstar's stand is yet to reveal itself...</p>
 
-<img src="PILLAR MEN.png" alt="PILLAR MEN">
+  <h1 class="outline-text-shadow">The Legend of Squeen Ness</h1>
+  <h2>How he came of his Stand</h2>
+  <p>
+    Squeen Ness gained his power after his ancestor Grug Ness activated his stand ability
+    when Squeen Ness was 18. Every Squeenstar from then has gained the ability to manifest a stand.
+  </p>
 
-<button onclick="playMusic()" style="font-size:18px; padding:10px;">
-  Awaken Stand
-</button>
+  <h2>His Stand</h2>
+  <p>Squeen Ness Squeenstar's stand is yet to reveal itself...</p>
 
-<iframe
-  id="music"
-  width="1"
-  height="1"
-  src="https://www.youtube.com/embed/MAdnZljxfWQ?enablejsapi=1&loop=1&playlist=MAdnZljxfWQ"
-  frameborder="0"
-  allow="autoplay"
-></iframe>
+  <img src="PILLAR MEN.png" alt="PILLAR MEN">
 
-<script>
-function playMusic() {
-  document.getElementById("music").src =
-    "https://www.youtube.com/embed/MAdnZljxfWQ?autoplay=1&loop=1&playlist=MAdnZljxfWQ";
-}
-</script>
+  <button onclick="playMusic()" style="font-size:18px; padding:10px;">
+    Awaken Stand
+  </button>
+
+  <iframe
+    id="music"
+    width="1"
+    height="1"
+    src="https://www.youtube.com/embed/MAdnZljxfWQ?enablejsapi=1&loop=1&playlist=MAdnZljxfWQ"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+
+  <script>
+    function playMusic() {
+      document.getElementById("music").src =
+        "https://www.youtube.com/embed/MAdnZljxfWQ?autoplay=1&loop=1&playlist=MAdnZljxfWQ";
+    }
+  </script>
 
 </body>
 </html>
