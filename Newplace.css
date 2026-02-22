@@ -3,7 +3,6 @@ body {
   color: white;
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
-  Background-image: url('Tv static.gif')
 
 }
 
@@ -68,3 +67,4 @@ button {
 button:hover {
   box-shadow: 0 0 15px red;
 }
+
