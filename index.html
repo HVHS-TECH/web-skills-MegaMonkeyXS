@@ -12,7 +12,7 @@
 
   <nav class="navbar">
     <a href="https://www.youtube.com/@HighflyWnated">ITS ALIVE ITS ALIVE ITS ALIVE</a>
-    <a href="https://tgkfhopqht-2434805136-a.codehs.me/index.html">PLAY MY GAME.</a>
+    <a href="https://tgkfhopqht-2434805136-a.codehs.me/index.html">IT IS BROKEN.</a>
   </nav>
 
   <header class="main-header">
@@ -46,26 +46,11 @@
 
   </div>
 
-<audio autoplay loop id="bgMusic">
+<audio controls autoplay>
+  <source src="FNAF 1_ Main Menu Full Static Animation Loop (Extended Static Sound).mp3" type="audio/ogg">
   <source src="FNAF 1_ Main Menu Full Static Animation Loop (Extended Static Sound).mp3" type="audio/mpeg">
 </audio>
 
-<script>
-  window.addEventListener("load", function () {
-    const music = document.getElementById("bgMusic");
-    music.volume = 0;     // start silent
-    music.play();
-
-    // fade in volume
-    let fade = setInterval(() => {
-      if (music.volume < 0.9) {
-        music.volume += 0.05;
-      } else {
-        clearInterval(fade);
-      }
-    }, 200);
-  });
-</script>
 
   <script>
     function goToPage() {
