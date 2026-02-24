@@ -46,14 +46,26 @@
 
   </div>
 
-  <iframe
-    id="music"
-    width="1"
-    height="1"
-    src="https://www.youtube.com/embed/MAdnZljxfWQ?loop=1&playlist=MAdnZljxfWQ"
-    frameborder="0"
-    allow="autoplay">
-  </iframe>
+<audio autoplay loop id="bgMusic">
+  <source src="FNAF 1_ Main Menu Full Static Animation Loop (Extended Static Sound).mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener("load", function () {
+    const music = document.getElementById("bgMusic");
+    music.volume = 0;     // start silent
+    music.play();
+
+    // fade in volume
+    let fade = setInterval(() => {
+      if (music.volume < 0.9) {
+        music.volume += 0.05;
+      } else {
+        clearInterval(fade);
+      }
+    }, 200);
+  });
+</script>
 
   <script>
     function goToPage() {
